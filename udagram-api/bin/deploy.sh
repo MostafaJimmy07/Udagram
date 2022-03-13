@@ -1,3 +1,2 @@
-eb create --sample mybkhere
-eb use mybkhere
-eb deploy mybkhere
+eb use udagram-api-dev
+eb deploy udagram-api-dev
