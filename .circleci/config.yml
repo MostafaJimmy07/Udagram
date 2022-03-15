@@ -5,6 +5,7 @@ orbs:
   aws-cli: circleci/aws-cli@2.0.3
 workflows:
   version: 2
+  build:
     jobs:
       - build:
           filters:
