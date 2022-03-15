@@ -3,17 +3,21 @@
 This app relies on CircleCI to automate install, build and deploy processes. The CI/CD pipeline follows the instructions outlined in the `.circleci/config.yml` file.
 
 ---
+
 ## Orbs
 
 Three orbs are required to run the `udagram` workflow and its two jobs:
-* `circleci/node@4.7.0`
-* `circleci/aws-cli@2.0.3`
-* `circleci/aws-elastic-beanstalk@2.0.1`
+
+- `circleci/node@4.7.0`
+- `circleci/aws-cli@2.0.3`
+- `circleci/aws-elastic-beanstalk@2.0.1`
 
 ---
+
 ## Scripts
 
 The pipeline leverages 8 scripts defined in the `package.json` file in the root folder of the project to build, instal and deploy both the API and the Front End:
+
 ```json
 
 "scripts": {
@@ -26,10 +30,11 @@ The pipeline leverages 8 scripts defined in the `package.json` file in the root 
         "frontend:test": "cd udagram-frontend && npm run test",
         "backend:test": "cd udagram-api && npm run test"
  }
- 
+
 ```
 
 ---
+
 ## Jobs
 
 ### Build
@@ -57,7 +62,12 @@ The pipeline leverages 8 scripts defined in the `package.json` file in the root 
 10. Create a build artifact for the API
 11. Zips the build artifact and deploys it an Elastic Beanstalk virtual environment
 
+# Environment variables
+
+- The required environment variables for the front-end application were added to the circleci environment to be added to the application during the build stage.
+
 ---
+
 ## Diagram
 
-![Pipeline Diagram]()
+![Pipeline Diagram](https://github.com/MostafaJimmy07/Udagram/blob/main/screenshots/Udagram_Pipeline_Diagram.png)

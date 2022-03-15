@@ -4,13 +4,14 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@2.0.3
 workflows:
-  udagram:
+  version: 2
+  build-n-deploy:
     jobs:
-      - build
-      - deploy:
+      - build:
           filters:
             branches:
-              only: main
+              only:
+                - main
 jobs:
   build:
     docker:
