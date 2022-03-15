@@ -1,0 +1,7 @@
+AWS Access Key ID : ASIASOG3HJOPUB2MRVO5
+AWS Secret Access Key : rRp+1TmCIGMuaIzQOJbzt24NiCzAV4OtlFxBF1ao
+AWS Session Token : FwoGZXIvYXdzEJb//////////wEaDCHuaJieXBBJJwI9DiLVAUngTJXVxtrjzPCbHhBv1TBI2KEss4M9LsGqMH9yVHgL8gBpFQHK/uadTDAU9AnKj5zDyZI40Z+mTb4IBTv3xE5HUBmqRl3SGrM3TKE7oPvCAR0uY7uFirDhjFC/S2X6UEmXMD69qne+ZYcQgPX6wCHrgI3BgA2NI6cm3uezuv3blvqNNugGW78SJRZ0huyBJD87K/SArEFr5rKugPP7kEeVWo1VsiwTqx1Slr49S6SynvPdSTX1s4qOkkHTBsFV2MA7i+VeexR2uQhXhs95mmOsfdF41Cj51aeRBjItevji4yX05iwVgUlSc8+joaqetXoOjck6iJI0pMinSyIiH9mxGDaxzOqFyBv1
+AWS Account ID : 167963478943.
+Federated user : voclabs/user1858530=70eddc86-09ca-11eb-a413-5bf34df9f15d
+
+aws s3 cp --recursive --acl public-read ./www s3://udagrambocket/
